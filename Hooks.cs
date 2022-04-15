@@ -103,7 +103,8 @@ namespace CumOn
                 {
 					if (currTime < currShotTime)
 					{
-						float decay = 1 - (float)Math.Pow(ShotStretch.Value, Test.Value / currVolumeTime);
+						// Exponential decay (kinda) looks better than linear. Testing futher tweak to the curve.
+						float decay = 1 - (float)Math.Pow(1 - ShotStretch.Value, Test.Value / currVolumeTime);
 						emitter.speed = emitter.speed * (float)Math.Pow(1 - decay, UnityEngine.Time.unscaledDeltaTime);
 					}
 					else

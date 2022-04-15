@@ -3,6 +3,7 @@ A plugin that gives control over cumshots and other fluids in H-scenes in Honey 
 
 # Notes
 This is still a work in progress
+- If you use the plugin HS2_BetterHScenes then you might want to switch the cum update setting to "FixedUpdate". The setting "LateUpdate" can draw less particles which might make the cum look poor depending on your machine specs.
 - Cumshot pattern can be changed in the settings under the plugin settings on F1. Can also tweak cum vomit amount.
 - Currently uses one cumshot pattern for all scenes. Final version will need presets since different positions suit different patterns
 - There is limited time in the orgasm animation, so for longer cum sequences the guy will continue into the post-coital talk... Will look for a way to extend the orgasm animation to resolve this

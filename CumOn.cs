@@ -72,13 +72,13 @@ namespace CumOn
 			NumShots           = Config.Bind(SECTION_CUM,   "1. Number of shots",            5,     DESCRIPTION_NUMSHOTS);
 			ShotTime           = Config.Bind(SECTION_CUM,   "2. Time from shot to shot",     0.7f,  DESCRIPTION_SHOTTIME);
 			ShotTimeIncrease   = Config.Bind(SECTION_CUM,   "3. Shot to shot time slowdown", 0.1f,  new ConfigDescription(DESCRIPTION_SHOTTIMEINCREASE,   new AcceptableValueRange<float>(0, 1)));
-			ShotSpeed          = Config.Bind(SECTION_CUM,   "4. Shot speed",                 20.0f, DESCRIPTION_SHOTSPEED);
+			ShotSpeed          = Config.Bind(SECTION_CUM,   "4. Shot speed",                 18.0f, DESCRIPTION_SHOTSPEED);
 			ShotSpeedDecrease  = Config.Bind(SECTION_CUM,   "5. Shot speed decrease",        0.15f, new ConfigDescription(DESCRIPTION_SHOTSPEEDDECREASE,  new AcceptableValueRange<float>(0, 1)));
 			ShotVolume         = Config.Bind(SECTION_CUM,   "6. Shot Volume",                0.40f, new ConfigDescription(DESCRIPTION_SHOTVOLUME,         new AcceptableValueRange<float>(0, 1))); ;
 			ShotVolumeDecrease = Config.Bind(SECTION_CUM,   "7. Shot volume decrease",       0.2f,  new ConfigDescription(DESCRIPTION_SHOTVOLUMEDECREASE, new AcceptableValueRange<float>(0, 1)));
 			ShotStretch        = Config.Bind(SECTION_CUM,   "8. Shot tail",                  0.75f, new ConfigDescription(DESCRIPTION_SHOTTAIL,        new AcceptableValueRange<float>(0, 1)));
-			Randomness         = Config.Bind(SECTION_CUM,   "9. Randomness of the spray",    2.5f,  DESCRIPTION_RANDOMNESS);
-			VomitAmount        = Config.Bind(SECTION_FLUID, "1. How much cum to vomit",      6.0f,  DESCRIPTION_VOMITAMOUNT);
+			Randomness         = Config.Bind(SECTION_CUM,   "9. Randomness of the spray",    3.0f,  DESCRIPTION_RANDOMNESS);
+			VomitAmount        = Config.Bind(SECTION_FLUID, "1. How much cum to vomit",      4.0f,  DESCRIPTION_VOMITAMOUNT);
 			GravityMultiplier  = Config.Bind(SECTION_SIM,   "1. Gravity multiplier",         2.0f,  DESCRIPTION_GRAVITY);
 			Resolution         = Config.Bind(SECTION_SIM,   "2. Simulation resolution",      1,     DESCRIPTION_RESOLUTION);
 			ParticleLife       = Config.Bind(SECTION_SIM,   "3. Lifetime of each particle",  3.0f,  DESCRIPTION_PARTICLELIFE);
